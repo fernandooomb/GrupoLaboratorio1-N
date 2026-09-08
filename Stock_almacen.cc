@@ -1,5 +1,6 @@
 #include <iostream>
 
+<<<<<<< HEAD
 struct Almacen
 {
     int stock;
@@ -8,6 +9,12 @@ struct Almacen
 void IngresarStock(int &stock , int cantidad );
 void RetirarStock (int *stock, int cantidad);
 void ConsultarStock(int stock);
+=======
+int cantidad;
+int IngresarStock(int stock, int cantidad);
+int RetirarStock(int *stock, int cantida);
+void ConsultarStock(int *stock);
+>>>>>>> 234f451ffda96b59b7c9fb76b8064ac85afca40e
 
 int main(){
     Almacen almacen;
@@ -23,6 +30,7 @@ int main(){
     
     return 0;
 }
+<<<<<<< HEAD
 
 void IngresarStock(int &stock, int cantidad){
 
@@ -30,3 +38,8 @@ void IngresarStock(int &stock, int cantidad){
         
     }
 
+=======
+void ConsultarStock(int *stock){
+    std:: cout<<"El stock actual es: " <<cantidad;
+}
+>>>>>>> 234f451ffda96b59b7c9fb76b8064ac85afca40e
