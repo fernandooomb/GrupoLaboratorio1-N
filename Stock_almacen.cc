@@ -6,7 +6,7 @@ struct Almacen
 };
 
 void IngresarStock(int &stock , int cantidad );
-void RetirarStock (int *stock, int cantidad);
+int RetirarStock(int *stock, int cantidad);
 void ConsultarStock(int stock);
 
 int main(){
@@ -29,4 +29,12 @@ void IngresarStock(int &stock, int cantidad){
         stock += cantidad ;
         
     }
+int RetirarStock(int *stock, int cantidad)
+{
+    *stock -= cantidad;
+    return *stock;
+}
+void ConsultarStock(int *stock){
+    std:: cout<<"El stock actual es: " <<stock;
+}
 
